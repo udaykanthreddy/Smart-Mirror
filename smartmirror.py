@@ -199,7 +199,7 @@ class Weather(QWidget):
             if icon2 is not None:
                 if self.icon != icon2:
                     self.icon = icon2
-                    image = cv2.imread(icon2, cv2.CV_LOAD_IMAGE_COLOR);
+                    image = cv2.imread(icon2, cv2.IMREAD_COLOR);
                     #image = Image.open(icon2)
                     #image = image.resize((100, 100), Image.ANTIALIAS)
                     #image = image.convert('RGB')
